@@ -13,6 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - uses: purcell/setup-emacs@master
+       with:
+         version: 24.5 # I just picked the one in the readme for stability
 
     - name: make
       run: make all
